@@ -4,65 +4,65 @@ const data = {
     tools:[
         {
             name: 'Java',
-            picture: 'src/assets/java.svg',
+            picture: 'assets/java.svg',
             tools:[
                 {
                     name: 'Spring Boot',
-                    picture: 'src/assets/spring.svg'
+                    picture: 'assets/spring.svg'
                 },
                 {
                     name: 'Java ServerFaces',
-                    picture: 'src/assets/jsf-logo.png'
+                    picture: 'assets/jsf-logo.png'
                 },
                 {
                     name: 'Enterprice JavaBeans',
-                    picture: 'src/assets/ejb.png'
+                    picture: 'assets/ejb.png'
                 },
             ]
         },
         {
             name: 'JavaScript',
-            picture: 'src/assets/javascript.svg',
+            picture: 'assets/javascript.svg',
             tools:[
                 {
                     name: 'Node.js',
-                    picture: 'src/assets/nodejs.svg'
+                    picture: 'assets/nodejs.svg'
                 },
                 {
                     name: 'React.js',
-                    picture: 'src/assets/react.svg'
+                    picture: 'assets/react.svg'
                 },
                 {
                     name: 'Express.js',
-                    picture: 'src/assets/express.svg'
+                    picture: 'assets/express.svg'
                 },
             ]
         },
         {
             name: 'Bases de datos',
-            picture: 'src/assets/db.svg',
+            picture: 'assets/db.svg',
             tools:[
                 {
                     name: 'PostgreSQL',
-                    picture: 'src/assets/postgresql.svg'
+                    picture: 'assets/postgresql.svg'
                 },
                 {
                     name: 'MySQL',
-                    picture: 'src/assets/mysql.svg'
+                    picture: 'assets/mysql.svg'
                 },
                 {
                     name: 'Microsoft SQL Server',
-                    picture: 'src/assets/sqlserver.svg'
+                    picture: 'assets/sqlserver.svg'
                 },
             ]
         },
         {
             name: 'Linux',
-            picture: 'src/assets/linux.svg',
+            picture: 'assets/linux.svg',
             tools:[
                 {
                     name: 'Ubuntu',
-                    picture: 'src/assets/ubuntu.svg'
+                    picture: 'assets/ubuntu.svg'
                 }
             ]
         },
