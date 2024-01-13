@@ -1,25 +1,29 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import routes from '../utils/routes';
 import '../styles/NavBar.css';
+import menuPicture from '../assets/Menu.svg';
+import logoPicture from '../assets/logo.png';
+
 
 function NavBarDesktop() {
     return (
         <>
-            <nav class="nav-bar">
-                <button class="menu-toggle" id="btnShowNav">
+            <nav className="nav-bar">
+                <button className="menu-toggle" id="btnShowNav">
                     <figure>
-                        <img src="./assets/img/Menu.svg" alt="menu" />
+                        <img src={ menuPicture } alt="menu" />
                     </figure>
                 </button>
-                <figure class="logo">
-                    <img src="./assets/img/logo.png" alt="boy-dev" />
+                <figure className="logo">
+                    <img src={ logoPicture } alt="boy-dev" />
                 </figure>
-                <ul class="navigation">
-                    <li><a href="#" class="btn-link-blue-white">Inicio</a></li>
-                    <li><a href="#" class="btn-link-blue-white">Projects</a></li>
-                    <li><a href="#" class="btn-link-blue-white">Informatión</a></li>
-                    <li><a href="#" class="btn-link-blue-white">Contact</a></li>
+                <ul className="navigation">
+                    {routes.map(item => (
+                        <li><NavLink to={item.to} className="btn-link-blue-white" key={item.value}>{item.value}</NavLink></li>
+                    ))}
                 </ul>
-                <h1 class="title">My Profile</h1>
+                <h1 className="title">Mi Portafolio</h1>
             </nav>
         </>
     )

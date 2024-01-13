@@ -1,7 +1,14 @@
 *{
-  font-family: 'Sniglet', cursive;
+  font-family: 'Sniglet', cursive, sans-serif;
   margin: 0;
   padding: 0;
+}
+
+#root{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 :root{
@@ -22,9 +29,9 @@
 body{
   background-color: var(--color-white-body);
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 }
 
 .btn-link-yellow{
@@ -84,11 +91,11 @@ body{
   background-color: var(--color-white);
   text-decoration: none;
   color: var(--color-black);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 8px;
 }
 
 .btn-link-blue-white:hover{
-  background-color: var(--color-blue-hover);
+  background-color: var(--color-blue);
   color: var(--color-white);
 }
