@@ -1,68 +1,87 @@
+import React from "react";
+import javaIcon from '../assets/java.svg';
+import springIcon from '../assets/spring.svg';
+import sjfIcon from '../assets/jsf-logo.png';
+import ejbIcon from '../assets/ejb.png';
+
+import javascriptIcon from '../assets/javascript.svg';
+import nodeIcon from '../assets/nodejs.svg';
+import reactIcon from '../assets/react.svg';
+import expressIcon from '../assets/express.svg';
+
+import dbIcon from '../assets/db.svg';
+import postgressqlIcon from '../assets/postgresql.svg';
+import mysqlIcon from '../assets/mysql.svg';
+import sqlserverIcon from '../assets/sqlserver.svg';
+
+import linuxIcon from '../assets/linux.svg';
+import ubuntuIcon from '../assets/ubuntu.svg';
+
 const data = {
     name: 'Edwin',
     surname: 'Garcia Quiterio',
     tools:[
         {
             name: 'Java',
-            picture: 'assets/java.svg',
+            picture: javaIcon,
             tools:[
                 {
                     name: 'Spring Boot',
-                    picture: 'assets/spring.svg'
+                    picture: springIcon
                 },
                 {
                     name: 'Java ServerFaces',
-                    picture: 'assets/jsf-logo.png'
+                    picture: sjfIcon
                 },
                 {
                     name: 'Enterprice JavaBeans',
-                    picture: 'assets/ejb.png'
+                    picture: ejbIcon
                 },
             ]
         },
         {
             name: 'JavaScript',
-            picture: 'assets/javascript.svg',
+            picture: javascriptIcon,
             tools:[
                 {
                     name: 'Node.js',
-                    picture: 'assets/nodejs.svg'
+                    picture: nodeIcon
                 },
                 {
                     name: 'React.js',
-                    picture: 'assets/react.svg'
+                    picture: reactIcon,
                 },
                 {
                     name: 'Express.js',
-                    picture: 'assets/express.svg'
+                    picture: expressIcon
                 },
             ]
         },
         {
             name: 'Bases de datos',
-            picture: 'assets/db.svg',
+            picture: dbIcon,
             tools:[
                 {
                     name: 'PostgreSQL',
-                    picture: 'assets/postgresql.svg'
+                    picture: postgressqlIcon
                 },
                 {
                     name: 'MySQL',
-                    picture: 'assets/mysql.svg'
+                    picture: mysqlIcon
                 },
                 {
                     name: 'Microsoft SQL Server',
-                    picture: 'assets/sqlserver.svg'
+                    picture: sqlserverIcon
                 },
             ]
         },
         {
             name: 'Linux',
-            picture: 'assets/linux.svg',
+            picture: linuxIcon,
             tools:[
                 {
                     name: 'Ubuntu',
-                    picture: 'assets/ubuntu.svg'
+                    picture: ubuntuIcon
                 }
             ]
         },

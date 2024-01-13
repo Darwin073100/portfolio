@@ -5,7 +5,7 @@ function InformationToolsItem(props) {
         <div className="information-tools-item">
             <div className='tools-out'>
                 <figure>
-                    <img src={ `src/${props.src}`} alt={props.value} />
+                    <img src={ `${props.src}`} alt={props.value} />
                 </figure>
                 <h2>{props.value}</h2>
             </div>
@@ -18,7 +18,7 @@ function SubTool(props) {
     return (
         <div className='tools-in'>
             <figure>
-                <img src={`src/${props.picture}`} alt={props.name} />
+                <img src={`${props.picture}`} alt={props.name} />
             </figure>
             <h3>{props.name}</h3>
         </div>
