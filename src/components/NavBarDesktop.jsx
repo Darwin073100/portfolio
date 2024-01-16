@@ -6,11 +6,11 @@ import menuPicture from '../assets/Menu.svg';
 import logoPicture from '../assets/logo.png';
 
 
-function NavBarDesktop() {
+function NavBarDesktop({ toggleNav }) {
     return (
         <>
             <nav className="nav-bar">
-                <button className="menu-toggle" id="btnShowNav">
+                <button className="menu-toggle" onClick={ toggleNav } >
                     <figure>
                         <img src={ menuPicture } alt="menu" />
                     </figure>
@@ -20,10 +20,18 @@ function NavBarDesktop() {
                 </figure>
                 <ul className="navigation">
                     {routes.map(item => (
-                        <li><NavLink to={item.to} className="btn-link-blue-white" key={item.value}>{item.value}</NavLink></li>
+                        <li>
+                            <NavLink to={item.to} className="btn-link-blue-white" key={item.value}>
+                                <i className={`fa ${item.icon} link-nav`} aria-hidden="true"></i>
+                                {item.value}
+                            </NavLink>
+                        </li>
                     ))}
                 </ul>
-                <h1 className="title">Mi Portafolio</h1>
+                <h1 className="title">
+                    <i className={`fa fa-briefcase link-nav`} aria-hidden="true"></i>
+                    Mi Portafolio
+                </h1>
             </nav>
         </>
     )

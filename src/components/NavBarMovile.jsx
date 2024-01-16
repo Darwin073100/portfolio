@@ -1,14 +1,18 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/NavBar.css';
+import routes from '../utils/routes';
 
-function NavBarMovile() {
+function NavBarMovile({ toggleNav }) {
   return (
     <>
         <ul className="navigation-movile" id="movileMenu">
-            <li><a href="#" className="btn-link-blue-white">Inicio</a></li>
-            <li><a href="#" className="btn-link-blue-white">Projects</a></li>
-            <li><a href="#" className="btn-link-blue-white">Informatión</a></li>
-            <li><a href="#" className="btn-link-blue-white">Contact</a></li>
+          {routes.map(route => (
+            <NavLink to={route.to} className='btn-link-blue-white' onClick={ toggleNav }>
+              <i className={`fa ${route.icon} link-nav`} aria-hidden="true"></i>
+              <span>{route.value}</span>
+            </NavLink>
+          ))}
         </ul>
     </>
   )

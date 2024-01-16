@@ -6,16 +6,23 @@ import { InformationPage } from './pages/InformationPage';
 import { NavBarDesktop } from './components/NavBarDesktop';
 import { Header } from './containers/Header';
 import { NavBarMovile } from './components/NavBarMovile';
-import './styles/App.css';
 import { Main } from './containers/Main';
+import './styles/App.css';
+import './styles/font-awesome-4.7.0/css/font-awesome.min.css';
 
 function App() {
+  const [navMovil, setNavMovil] = React.useState(false);
+  const toggleNav = ()=>{
+    setNavMovil(!navMovil);
+    console.log(navMovil);
+  }
+
   return (
     <>
       <BrowserRouter>
         <Header>
-          <NavBarDesktop />
-          <NavBarMovile />
+          <NavBarDesktop toggleNav={ toggleNav }/>
+          {navMovil && <NavBarMovile toggleNav={ toggleNav } />}
         </Header>
         <Main>
           <Routes>

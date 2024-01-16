@@ -25,6 +25,7 @@ import facebook from '../assets/projects/facebook.png';
 import maqueta from '../assets/projects/maqueta-profile.png';
 import youtube from '../assets/projects/youtube.png';
 import shopsystem from '../assets/projects/shop.png';
+import springReact from '../assets/projects/spring-react.png';
 
 
 const data = {
@@ -129,12 +130,29 @@ const data = {
                     picture: sjfIcon
                 },
                 {
-                    name: 'HTML',
-                    picture: html5
+                    name: 'MySQL',
+                    picture: mysqlIcon
+                }
+            ]
+        },
+        {
+            name: 'Crud SpringBoot & PostgreSQL (API REST)',
+            description: 'Construccion de una API REST con SpringBoot haciendo CRUD a una DB en PostgreSQL, esta api es consumida por react.js',
+            github: 'https://github.com/Darwin073100/Crud-BackEnd-StringBoot/tree/react',
+            deploy: '#',
+            picture: springReact,
+            tecnologies:[
+                {
+                    name: 'Java',
+                    picture: javaIcon
                 },
                 {
-                    name: 'CSS',
-                    picture: css3
+                    name: 'SpringBoot',
+                    picture: springIcon
+                },
+                {
+                    name: 'PostgreSQL',
+                    picture: postgressqlIcon
                 },
             ]
         },

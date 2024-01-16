@@ -1,14 +1,17 @@
 export default [
     {
         to: '/',
-        value: 'Inicio'
+        value: 'Inicio',
+        icon: 'fa-home'
     },
     {
         to: '/projects',
-        value: 'Proyectos'
+        value: 'Proyectos',
+        icon: 'fa-folder'
     },
     {
         to: '/information',
-        value: 'Información'
+        value: 'Información',
+        icon: 'fa-address-card'
     }
 ];
