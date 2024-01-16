@@ -1,14 +1,14 @@
 import React from 'react';
 import { Information } from '../containers/Information';
 import { data } from '../utils/data';
-import userPicture from '../assets/user.svg';
+import userPicture from '../assets/perfil.jpg';
 import backgroundPicture from '../assets/background.jpg';
 import { InformationToolsItem } from '../components/InformationToolsItem';
 
 function Home() {
   return (
     <Information>
-      <h1>Desarrollador Web Full Stack</h1>
+      <h1>{ `${data.name} ${data.surname}` }</h1>
       <span>Ingeniero en Tecnologías de la Información y Comunicaciones</span>
       <div className="information-main">
         <article className="information-me">
@@ -21,7 +21,7 @@ function Home() {
             </figure>
           </div>
           <div className="me-information">
-            <h2>{ `${data.name} ${data.surname}` }</h2>
+            <h2>Desarrollador Web Full Stack</h2>
             <p>
               Soy una persona que le gusta los retos,
               quiero aprender día a día sobre lo que me

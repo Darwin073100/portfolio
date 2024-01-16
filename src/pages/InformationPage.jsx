@@ -1,9 +1,9 @@
 import React from 'react';
 
-function Information() {
+function InformationPage() {
   return (
     <div>Information</div>
   )
 }
 
-export { Information };
+export { InformationPage };

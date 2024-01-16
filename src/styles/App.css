@@ -35,7 +35,6 @@ body{
 }
 
 .btn-link-yellow{
-  width: 80%;
   text-align: center;
   display: inline-block;
   background-color: var(--color-yellow);
@@ -43,6 +42,7 @@ body{
   text-decoration: none;
   color: var(--color-white);
   padding: 8px;
+  display: block;
 }
 .btn-link-yellow:hover{
   background-color: var(--color-yellow-hover);
@@ -78,8 +78,11 @@ body{
   background-color: var(--color-blue);
   text-decoration: none;
   color: var(--color-black);
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 8px;
+  display: block;
+  text-align: center;
+  color: var(--color-white);
 }
 
 .btn-link-blue:hover{
