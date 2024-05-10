@@ -1,6 +1,6 @@
 import React from 'react';
 import { Information } from '../containers/Information';
-import { data } from '../utils/data';
+import { data } from '../utils/data.ts';
 import userPicture from '../assets/perfil.jpg';
 import backgroundPicture from '../assets/background.jpg';
 import { InformationToolsItem } from '../components/InformationToolsItem';
@@ -23,13 +23,9 @@ function Home() {
           <div className="me-information">
             <h2>Desarrollador Web Full Stack</h2>
             <p>
-              Soy una persona que le gusta los retos,
-              quiero aprender día a día sobre lo que me
-              apasiona, soy estudiante, comprometido
-              con mi carrera y mi sabiduría.
-              Me gusta ser responsable con mis tareas,
-              trato de cumplir al 100 % lo que me corresponde, 
-              la responsabilidad es un aspecto muy importante para mí.
+              Desarrollador Web apasionado con mi carrera y en busca de nuevos 
+              y emocionantes retos. Altamente responsable y sumamente entregado 
+              al cumplimiento del deber.
             </p>
           </div>
         </article>
