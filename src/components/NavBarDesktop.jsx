@@ -20,8 +20,8 @@ function NavBarDesktop({ toggleNav }) {
                 </figure>
                 <ul className="navigation">
                     {routes.map(item => (
-                        <li>
-                            <NavLink to={item.to} className="btn-link-blue-white" key={item.value}>
+                        <li key={item.to}>
+                            <NavLink to={item.to} className={({ isActive })=> `btn-link-blue-white ${isActive? 'text-primary': ''}`} key={item.value}>
                                 <i className={`fa ${item.icon} link-nav`} aria-hidden="true"></i>
                                 {item.value}
                             </NavLink>

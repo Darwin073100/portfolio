@@ -21,7 +21,7 @@ function Home() {
             </figure>
           </div>
           <div className="me-information">
-            <h2>Desarrollador Web Full Stack</h2>
+            <h2>Desarrollador Web FrontEnd</h2>
             <p>
               Soy una persona que le gusta los retos,
               quiero aprender día a día sobre lo que me
@@ -36,7 +36,8 @@ function Home() {
         <article className="information-tools">
           <h2>Habilidades técnicas</h2>
           {data.tools?.map( tool => ( 
-            <InformationToolsItem src={tool.picture} value={tool.name} tools={tool.tools} key={tool.name}/>
+            <InformationToolsItem 
+            src={tool.picture} value={tool.name} tools={tool.tools} key={tool.name}/>
           ))}          
         </article>
       </div>

@@ -20,10 +20,14 @@ function ProjectItem(props) {
                     ))}
                 </div>
                 <div className='project-links'>
-                    <a href={props.deploy} className='btn-link-blue' target='_blank'>
+                    {(props.deploy === null)
+                    ?   ''
+                    :   <a href={props.deploy} className='btn-link-blue' target='_blank'>
                         <i className={`fa fa-desktop link-nav`} aria-hidden="true"></i>
                         Ir al sitio
-                    </a>
+                        </a>
+                    }
+
                     <a href={props.github} className='btn-link-yellow' target='_blank'>
                         <i className={`fa fa-github link-nav`} aria-hidden="true"></i>
                         Ir al repositorio

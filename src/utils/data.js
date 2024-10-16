@@ -8,7 +8,9 @@ import javascriptIcon from '../assets/javascript.svg';
 import nodeIcon from '../assets/nodejs.svg';
 import reactIcon from '../assets/react.svg';
 import expressIcon from '../assets/express.svg';
+import viteIcon from '../assets/vite.svg';
 
+import firebaseIcon from '../assets/firebase.svg';
 import dbIcon from '../assets/db.svg';
 import postgressqlIcon from '../assets/postgresql.svg';
 import mysqlIcon from '../assets/mysql.svg';
@@ -26,30 +28,40 @@ import maqueta from '../assets/projects/maqueta-profile.png';
 import youtube from '../assets/projects/youtube.png';
 import shopsystem from '../assets/projects/shop.png';
 import springReact from '../assets/projects/spring-react.png';
+import gifexpert from '../assets/projects/gifexpert.png';
+import journalapp from '../assets/projects/journalapp.png';
 
 
 const data = {
     name: 'Edwin',
     surname: 'Garcia Quiterio',
-    tools:[
+    contact:[
         {
-            name: 'Java',
-            picture: javaIcon,
-            tools:[
-                {
-                    name: 'Spring Boot',
-                    picture: springIcon
-                },
-                {
-                    name: 'Java ServerFaces',
-                    picture: sjfIcon
-                },
-                {
-                    name: 'Enterprice JavaBeans',
-                    picture: ejbIcon
-                },
-            ]
+            id: 1,
+            name: 'Linkedin',
+            url: 'https://www.linkedin.com/in/edwin310700/',
+            img: 'https://cdn.icon-icons.com/icons2/805/PNG/512/linkedin_icon-icons.com_65929.png'
         },
+        {
+            id: 2,
+            name: 'Github',
+            url: 'https://github.com/Darwin073100',
+            img: 'https://cdn.icon-icons.com/icons2/836/PNG/512/Github_icon-icons.com_66788.png'
+        },
+        {
+            id: 2,
+            name: 'Correo electronico',
+            url: 'edwinegq@outlook.com',
+            img: 'https://cdn.icon-icons.com/icons2/72/PNG/256/email_14410.png'
+        },
+        {
+            id: 3,
+            name: 'Numero telefonico',
+            url: '+52 7411073337',
+            img: 'https://cdn.icon-icons.com/icons2/72/PNG/256/mobile_phone_14388.png'
+        }
+    ],
+    tools:[
         {
             name: 'HTML',
             picture: html5,
@@ -80,6 +92,24 @@ const data = {
                 {
                     name: 'Express.js',
                     picture: expressIcon
+                },
+            ]
+        },
+        {
+            name: 'Java',
+            picture: javaIcon,
+            tools:[
+                {
+                    name: 'Spring Boot',
+                    picture: springIcon
+                },
+                {
+                    name: 'Java ServerFaces',
+                    picture: sjfIcon
+                },
+                {
+                    name: 'Enterprice JavaBeans',
+                    picture: ejbIcon
                 },
             ]
         },
@@ -115,10 +145,56 @@ const data = {
     ],
     projects:[
         {
+            name: 'Journal App',
+            description: 'Esta aplicacion web esta conectada a una DB, donde se alojan las actividades diarias que una registra, deberas registrarte y loguearte antes.',
+            github: 'https://github.com/Darwin073100/journal-app',
+            deploy: 'https://journalappegq.netlify.app/',
+            picture: journalapp,
+            tecnologies:[
+                {
+                    name: 'JavaScript',
+                    picture: javascriptIcon
+                },
+                {
+                    name: 'React',
+                    picture: reactIcon
+                },
+                {
+                    name: 'Vite',
+                    picture: viteIcon
+                },
+                {
+                    name: 'Firestore',
+                    picture: firebaseIcon
+                }
+            ]
+        },
+        {
+            name: 'Gif Expert',
+            description: 'Este proyecto está construido para buscar Gifs de los temas que pongamos en el buscador, al inicio muestra ya gif de una anime.',
+            github: 'https://github.com/Darwin073100/gif-expert-app',
+            deploy: 'https://gifexpertappegq.netlify.app/',
+            picture: gifexpert,
+            tecnologies:[
+                {
+                    name: 'JavaScript',
+                    picture: javascriptIcon
+                },
+                {
+                    name: 'React',
+                    picture: reactIcon
+                },
+                {
+                    name: 'Vite',
+                    picture: viteIcon
+                }
+            ]
+        },
+        {
             name: 'Shop System',
             description: 'En este proyecto vamos a controlar distintas entidades y procesos, es simular un sistema de administración, donde podamos tener Empleados, Productos, Clientes, Proveedores, entre otras entidades mas que se muestran en el diagrama mas adelante.',
             github: 'https://github.com/Darwin073100/ShopSystem',
-            deploy: '#',
+            deploy: null,
             picture: shopsystem,
             tecnologies:[
                 {
@@ -139,7 +215,7 @@ const data = {
             name: 'Crud SpringBoot & PostgreSQL (API REST)',
             description: 'Construccion de una API REST con SpringBoot haciendo CRUD a una DB en PostgreSQL, esta api es consumida por react.js',
             github: 'https://github.com/Darwin073100/Crud-BackEnd-StringBoot/tree/react',
-            deploy: '#',
+            deploy: null,
             picture: springReact,
             tecnologies:[
                 {

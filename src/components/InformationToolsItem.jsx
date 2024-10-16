@@ -9,7 +9,7 @@ function InformationToolsItem(props) {
                 </figure>
                 <h2>{props.value}</h2>
             </div>
-            { props.tools.map( tool => ( <SubTool name={tool.name} picture={tool.picture}/>)) }
+            { props.tools.map( tool => ( <SubTool  key={tool.name} name={tool.name} picture={tool.picture} />)) }
         </div>
     )
 }

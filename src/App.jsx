@@ -9,6 +9,7 @@ import { NavBarMovile } from './components/NavBarMovile';
 import { Main } from './containers/Main';
 import './styles/App.css';
 import './styles/font-awesome-4.7.0/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
   const [navMovil, setNavMovil] = React.useState(false);
